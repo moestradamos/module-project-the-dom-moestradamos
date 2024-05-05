@@ -95,7 +95,7 @@ describe('Sprint 5 Module', () => {
       screen.getByText('Liftoff! 🚀')
     })
   })
-  describe('Task 5 - Friends widget', () => {
+  describe.only('Task 5 - Friends widget', () => {
     describe('Kimberly Ng was born in 1987 and is friends with Samantha Singh.', () => {
       beforeAll(() => {
         jest.spyOn(global.Math, 'random').mockReturnValue(0.6)
