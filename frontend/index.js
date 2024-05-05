@@ -9,8 +9,9 @@ function moduleProject1() {
   // 👉 TASK 1 - Add a "widget" class name to widgets so CSS kicks in
   //  ✨ add your code here
   const widgets = document.querySelectorAll('section div')
-  widgets.forEach(widget => {
+  widgets.forEach((widget, idx) => {
     widget.classList.add('widget')
+    widget.setAttribute('tabindex', idx + 1)
 })
 
   // 👉 TASK 2 - Build a "Quote of the Day" widget
